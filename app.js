@@ -24,7 +24,7 @@ async function  validarFormulario (evento){
 
     var elemento = document.getElementById("cel");
     if (elemento.value.trim() === "" || elemento.value.length != 10 || elemento.value == null || isNaN(elemento.value)){
-        alert("Celular inválido. Por favor ingrese solamente números");
+        alert("Celular inválido. Por favor ingrese solamente números y en el formato indicado");
         elemento.focus();
         return false;        
     }    
