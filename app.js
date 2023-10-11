@@ -1,7 +1,10 @@
+
 const $form=document.querySelector("#form")
+
 $form.addEventListener('submit', validarFormulario)
 
-function  validarFormulario (evento){
+
+async function  validarFormulario (evento){
     evento.preventDefault();
 
     var elemento = document.getElementById("nombre");
@@ -32,7 +35,20 @@ function  validarFormulario (evento){
         return false;        
     }    
 
-    alert("Su mensaje fue enviado. Gracias")
-    this.reset();
-    return true;
+
+    const form=new FormData(this)
+    const respuesta= await fetch (this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    if (respuesta.ok){
+        this.reset();
+        alert("Su mensaje fue enviado con éxito. Gracias")
+        this.reset();
+        return true;  
+    }
+
 }
