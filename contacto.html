@@ -24,22 +24,32 @@
 </nav>
 
 <main>
-
-    
+ 
     <section>
         <!-- cambio 2 para probar hacer pull request por la web de GitHub-->
-        <h1>Por favor completa el formulario con tu consulta o comentarios:</h1>
+        <h1>Por favor complete el formulario con su consulta o comentarios:</h1>
+        
+        <form id="form" action="https://formspree.io/f/xoqoyazy" method="POST" >
 
-        <form action="https://formspree.io/f/xoqoyazy" method="POST">
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
-            <input type="text" name="mail" id="mail" placeholder="Mail">
-            <input type="text" name="cel" id="cel" placeholder="Celular" >
-            <input type="text" name="mensaje" id="mensaje" placeholder="Mensaje">
-            <input type="submit" name="boton" value="Enviar">
+            <label for="nombre">Nombre</label><br>            
+            <input type="text" name="nombre" id="nombre" style="height:25px;width:300px" placeholder="Nombre y apellido" ><br>
+            <br>
+            <label for="mail">Correo Electrónico</label><br>
+            <input type="text" name="mail" id="mail" style="height:25px;width:300px" placeholder="Mail"><br>
+            <br>
+            <label for="cel">Celular</label><br>
+            <input type="text" name="cel" id="cel" style="height:25px;width:300px" placeholder="Celular"><br>
+            <br>
+            <label for="mensaje">Mensaje</label><br>
+            <input type="text" name="mensaje" id="mensaje" style="height:150px;width:300px" placeholder="Mensaje"><br>
+            <br>
+            <input type="submit" name="botonEnviar" value="Enviar">
+            <input type="reset" name="botonReset" value="Borrar">
         </form>
 
     </section>
 
+    <script src="app.js"></script>
 
 </main>
 
