@@ -15,14 +15,15 @@ async function  validarFormulario (evento){
     }    
 
     var elemento = document.getElementById("mail");
-    if (elemento.value.trim() === "" || elemento.value.length == 0 || elemento.value == null || (!(/^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail|edu)\.(?:|com|ar)+$/.test(elemento.value)))){
-        alert("Mail inválido. Por favor ingrese dirección de mail válida");
+//    if (elemento.value.trim() === "" || elemento.value.length == 0 || elemento.value == null || (!(/^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail|edu)\.(?:|com|ar)+$/.test(elemento.value)))){
+    if (elemento.value.trim() === "" || elemento.value.length == 0 || elemento.value == null || (!(/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(elemento.value)))){
+            alert("Mail inválido. Por favor ingrese dirección de mail válida");
         elemento.focus();
         return false;        
     }    
 
     var elemento = document.getElementById("cel");
-    if (elemento.value.trim() === "" || elemento.value.length == 0 || elemento.value == null || isNaN(elemento.value)){
+    if (elemento.value.trim() === "" || elemento.value.length != 10 || elemento.value == null || isNaN(elemento.value)){
         alert("Celular inválido. Por favor ingrese solamente números");
         elemento.focus();
         return false;        

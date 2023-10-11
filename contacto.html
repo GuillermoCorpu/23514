@@ -35,13 +35,14 @@
             <input type="text" name="nombre" id="nombre" style="height:25px;width:300px" placeholder="Nombre y apellido" ><br>
             <br>
             <label for="mail">Correo Electrónico</label><br>
-            <input type="text" name="mail" id="mail" style="height:25px;width:300px" placeholder="Mail"><br>
+            <input type="email" name="mail" id="mail" style="height:25px;width:300px" placeholder="Mail"><br>
             <br>
             <label for="cel">Celular</label><br>
-            <input type="text" name="cel" id="cel" style="height:25px;width:300px" placeholder="Celular"><br>
+            <input type="tel" name="cel" id="cel" style="height:25px;width:300px" pattern="[0-9]{10}" placeholder="Celular"> <small>Completar con Código de Area + Número Local (largo total = 10). Ejemplo: 1144445555</small><br>
             <br>
             <label for="mensaje">Mensaje</label><br>
-            <input type="text" name="mensaje" id="mensaje" style="height:150px;width:300px" placeholder="Mensaje"><br>
+            <!--<input type="text" name="mensaje" id="mensaje" style="height:150px;width:300px" placeholder="Mensaje"><br>-->
+            <textarea name="mensaje" id="mensaje" style="height:150px;width:300px" placeholder="Mensaje"></textarea><br>
             <br>
             <input type="submit" name="botonEnviar" value="Enviar">
             <input type="reset" name="botonReset" value="Borrar">
