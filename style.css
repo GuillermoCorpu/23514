@@ -148,3 +148,38 @@ i:hover{
     
     color: yellow;
 }
+
+form{
+    margin-left: 100px;
+}
+
+.formLabel{
+    font-size: 15px;
+    color: white;
+    margin: 5px;
+}
+
+.formInput{
+    font-size: 15px;
+    height: 25px;
+    width: 300px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.formBoton{
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    width: 70px;
+    margin: 5px;
+}
+
+.formBoton:hover{
+    background-color:yellow;
+    font-style:oblique;
+}
+
+footer{
+    color: white;
+}
