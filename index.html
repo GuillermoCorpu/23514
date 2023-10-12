@@ -1,67 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/Imagenes/th1.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css"> <!-- Agregué este link de CSS porque no estaba-->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c5b95681ac.js" crossorigin="anonymous"></script>  
     <title>CineCodo</title>
 </head>
-<body>
+
     <header>
-        <img src="/Imagenes/th1.png" alt="Logo del cine">
-        <h2>Cine Codo</h2>
+        <div class="encabezado">
+            <a href="index.html"><img src="/Imagenes/logo.png" alt="Logo del cine" width="150px" height="80px"></a>
+            <div class="redes">
+                <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://ar.linkedin.com/?original_referer=https%3A%2F%2Far.search.yahoo.com%2F" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
     </header>
-<hr>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="promociones.html">Promociones</a></li>
-        <li><a href="compra.html">Compra de entradas</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
+    
+
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            
+            <li><a href="complejos.html">Complejos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        
+    </nav>
+
+
+
+    <main>
+        
+        <section class="container">
+            <h2>ESTRENOS</h2>
+                <article class="estrenos">
+
+                
+
+                    <div class="caja-peliculas">
+                        <div class="caja-img">
+                            <img src="/Imagenes/estreno.jpg" alt="Extraña forma de vida" width="160" height="240">                        
+                            <div class="titulo">
+                                <span>EXTRAÑA FORMA DE VIDA</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="caja-peliculas">
+                        <div class="caja-img">
+                            <img src="/Imagenes/estreno2.jpg" alt="Los indestructibles" width="160" height="240">                        
+                            <div class="titulo">
+                                <span>LOS INDESTRUCTIBLES 4</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="caja-peliculas">
+                        <div class="caja-img">
+                            <img src="/Imagenes/estreno3.jpg" alt="No me rompan" width="160" height="240">                        
+                            <div class="titulo">
+                                <span>NO ME ROMPAN</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+            <H2>Peliculas</H2>
+
+                <article class="peliculas">
+
+                    <div class="caja-peliculas">
+                        <div class="caja-img">
+                            <img src="/Imagenes/peliculas.jpg" alt="Barbie" width="160" height="240">                        
+                            <div class="titulo">
+                                <span>BARBIE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="caja-peliculas">
+                        <div class="caja-img">
+                            <img src="/Imagenes/peliculas2.jpg" alt="Avatar" width="160" height="240">                        
+                            <div class="titulo">
+                                <span>AVATAR</span>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="caja-peliculas">
+                        <div class="caja-img">
+                            <img src="/Imagenes/peliculas3.jpg" alt="Elementos" width="160" height="240">                        
+                            <div class="titulo">
+                                <span>ELEMENTOS</span>
+                            </div>
+                        </div>
+                </div>
+
+                    <div class="caja-peliculas">
+                        <div class="caja-img">
+                            <img src="/Imagenes/peliculas4.jpg" alt="Guardianes de la galaxia vol3" width="160" height="240">                        
+                            <div class="titulo">
+                                <span>GUARDIANES DE LA GALAXIA VOL3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="caja-peliculas">
+                        <div class="caja-img">
+                            <img src="/Imagenes/peliculas5.jpg" alt="Gran turismo" width="160" height="240">                        
+                            <div class="titulo">
+                                <span>GRAN TURISMO</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            <h2>Proximamente</h2>
+
+                <article class="prox">
+
+                    <div class="caja-peliculas">
+                        <div class="caja-img">
+                            <img src="/Imagenes/proximamente.jpg" alt="Puan" width="160" height="240">                        
+                            <div class="titulo">
+                                <span>PUAN</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="caja-peliculas">
+                        <div class="caja-img">
+                            <img src="/Imagenes/proximamente2.jpg" alt="El justiciero 3" width="160" height="240">                        
+                            <div class="titulo">
+                                <span>EL JUSTICIERO 3</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+        </section>  
+        
+    </main>
+
+    <footer>
+        <hr>
+            <p>Tel: 4731 5053  | <a href="mailto:mail.google.com">cinecodo@cine.com.ar</a></p>
+        
+
+        <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://ar.linkedin.com/?original_referer=https%3A%2F%2Far.search.yahoo.com%2F" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     <hr>
-</nav>
-
-<main>
-    <h2>ESTRENOS</h2>
-    <img src="/Imagenes/estreno.jpg" alt="EXTRAÑA FORMA DE VIDA" >  
-    <span>EXTRAÑA FORMA DE VIDA</span>
-    <img src="/Imagenes/estreno2.jpg" alt="">
-    <span>Los indestructibles 4</span>
-    <img src="/Imagenes/estreno3.jpg" alt="">
-    <span>No me rompan</span>
-
-    <H2>Peliculas</H2>
-
-    <img src="/Imagenes/peliculas.jpg" alt="">
-    <span>Barbie</span>
-    <img src="/Imagenes/peliculas2.jpg" alt="">
-    <span>Avatar</span>
-    <img src="/Imagenes/peliculas3.jpg" alt="">
-    <span>Elementos</span>
-    <img src="/Imagenes/peliculas4.jpg" alt="">
-    <span>Guardianes de la galaxia vol3</span>
-    <img src="/Imagenes/peliculas5.jpg" alt="">
-    <span>Gran turismo</span>
-
-    <h2>Proximamente</h2>
-
-    <img src="/Imagenes/proximamente.jpg" alt="">
-    <span>Puan</span>
-    <img src="/Imagenes/proximamente2.jpg" alt="">
-    <span>El justiciero 3</span>
-
-
-
-</main>
-
-<footer>
-    <hr>
-        <p>Tel: 4731 5053  | <a href="mailto:mail.google.com">cinecodo@cine.com.ar</a></p> <!--Modifiqué estos datos de contacto-->
-    <hr>
-</footer>
+    </footer>
 
     
 </body>
