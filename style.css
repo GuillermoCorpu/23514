@@ -183,3 +183,66 @@ form{
 footer{
     color: white;
 }
+
+.complejos p{
+    color: white;
+    text-align: center;
+}
+
+.complejos>li{
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+}
+
+@media (max-width: 400px) {
+    .complejos p{
+        font-size: 4vw;
+    }
+    .complejos iframe{
+        width:90vw;
+    }
+    .complejos>li{
+        margin: 0.2vw;
+        padding: 0.2vw;
+    }
+}
+  
+@media (min-width: 400px) and (max-width: 600px) {
+    .complejos p{
+        font-size: 3vw;
+    }
+    .complejos iframe{
+        width:92vw;
+    }
+    .complejos>li{
+        margin: 0.4vw;
+        padding: 0.4vw;
+    }
+}
+  
+@media (min-width: 600px) and (max-width: 800px) {
+    .complejos p{
+        font-size: 2vw;
+    }
+    .complejos iframe{
+        width:94vw;
+    }
+    .complejos>li{
+        margin: 0.6vw;
+        padding: 0.6vw;
+    }
+}
+  
+@media (min-width: 800px) {
+    .complejos p{
+        font-size: 1.5vw;
+    }
+    .complejos iframe{
+        width:94vw;
+    }
+    .complejos>li{
+        margin: 0.8vw;
+        padding: 0.8vw;
+    }
+}
