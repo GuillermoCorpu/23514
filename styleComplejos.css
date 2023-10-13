@@ -95,3 +95,14 @@ a:link {
 small{
     color: white;
 }
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+main{
+    margin-top: 150px;
+}
