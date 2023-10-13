@@ -3,16 +3,23 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="/Imagenes/th1.ico" type="image/x-icon">
-        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="initial-scale=1,width=device-width">
+        <link rel="shortcut icon" href="./Imagenes/th1.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./styleComplejos.css">
         <script src="https://kit.fontawesome.com/c5b95681ac.js" crossorigin="anonymous"></script>  
         <title>CineCodo</title>
     </head>
 
     <header>
         <div class="encabezado">
-            <a href="index.html"><img src="/Imagenes/logo.png" alt="Logo del cine" width="150px" height="80px"></a>
+            <a href="./index.html">
+                <img src=".\Imagenes\Logo Mediano.png" alt="Logo del cine" height="80px">
+            </a>
             <div class="redes">
                 <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -22,19 +29,33 @@
         </div>
     </header>
 
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>            
-            <li><a href="complejos.html">Complejos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>        
-    </nav>
+    <div>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item  px-5">
+                        <a class="nav-link text-dark" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link text-dark" href="./complejos.html">Complejos</a>
+                    </li>
+                    <li class="nav-item px-5">
+                        <a class="nav-link text-dark" href="./contacto.html">Contacto</a>
+                    </li>    
+                </ul>
+            </div>  
+        </nav>    
+    </div>
 
     <main>
 
         <section >
             
-            <h2>Por favor complete el formulario con su consulta o comentarios:</h2>
+            <h2>Por favor completá el formulario con tu consulta o comentarios:</h2>
             
             <form id="form" action="https://formspree.io/f/xoqoyazy" method="POST" >
 
