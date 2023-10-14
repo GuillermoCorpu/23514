@@ -4,58 +4,10 @@
     font-family: 'Open Sans', sans-serif, Arial;
 }
 
-body{   /*pongo display grid en el body, y defino para cada sección un alias*/
+body{  
     background-color: black;
 }
 
-
-/* PROBAR QUE SE UBIQUEN BIEN Y DPS SACARLOS LOS COLORES -------------------------------------------------------------*/
-header{
-    grid-area: my-header; 
-    border: 2px solid blue;
-}
-
-main{
-    grid-area: my-main;
-    border: 2px solid green;
-}
-
-section{
-    grid-area: my-section;
-    border: 2px solid violet;
-}
-
-aside{
-    grid-area: my-aside;
-    border: 2px solid yellow;
-}
-
-footer{
-    grid-area: my-footer;
-    border: 2px solid red;
-}
-
-/*----------------------------------------------------*/
-
-main{     
-    grid-template-columns:2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "my-header my-header my-header"
-    "my-main my-main my-main"
-    "my-section my-section my-aside"
-    "my-footer my-footer my-footer"
-}
-
-
-
-
-main > iframe {
-    border: 4px solid #fac805;
-    transform: scale(); /*Revisar cómo se ve el video de youtube y si tiene borde, position que quede a la izquierda el video no debe modificar su tamaño si cambia el ancho, salvo que use breakpoints averiguar medidas de tamaño grande, mediano y chico*/
-    position: relative;             
-    right:0%;      
-}
 
 h2{
     color:#fac805;
@@ -63,11 +15,6 @@ h2{
 
 h3, p, div > div, table {
     font-size: 1em;
-    color: white;
-}
-
-.textor {    /*texto del reparto*/
-    font-size: 0.8em;
     color: white;
 }
 
@@ -81,12 +28,21 @@ h3, p, div > div, table {
 }
 
 
-.container{
-    background-color: orange;
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
-.reparto {
-    border: 2px solid white;
-    transform: scale();
+
+.fotoactores{
+    border: 5px solid white;
+    transform: scale(90%,90%);
 }
 
+.textor {    /*texto del reparto*/
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+}   /*Cómo lograr que quede el texto en el centro de la caja?*/
