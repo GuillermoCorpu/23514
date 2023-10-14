@@ -1,65 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/Imagenes/th1.ico" type="image/x-icon">
-    <title>Contacto</title>
-</head>
-<body>
-    <header>
-        <img src="/Imagenes/th1.png" alt="Logo del cine">
-        <h2>Cine Codo</h2>
-    </header>
-<hr>
+<html lang="es">
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="promociones.html">Promociones</a></li>
-        <li><a href="compra.html">Compra de entradas</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-    <hr>
-</nav>
-
-<main>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1,width=device-width">
+        <link rel="shortcut icon" href="./Imagenes/th1.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./styleComplejos.css">
+        <script src="https://kit.fontawesome.com/c5b95681ac.js" crossorigin="anonymous"></script>  
+        <title>CineCodo</title>
+    </head>
  
-    <section >
-        <!-- cambio 2 para probar hacer pull request por la web de GitHub-->
-        <h1>Por favor complete el formulario con su consulta o comentarios:</h1>
-        
-        <form id="form" action="https://formspree.io/f/xoqoyazy" method="POST" >
+    <header>
+        <section class="encabezado">
+            <a href="./index.html">
+                <img src=".\Imagenes\Logo Mediano.png" alt="Logo del cine" height="80px">
+            </a>
+            <div class="redes">
+                <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://ar.linkedin.com/?original_referer=https%3A%2F%2Far.search.yahoo.com%2F" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </section>
 
-            <label for="nombre">Nombre (requerido)</label><br/>
-            <input type="text" name="nombre" id="nombre" style="height:25px;width:300px" placeholder="Nombre y apellido" required /><br/>
-            <br/>
-            <label for="mail">Correo Electrónico (requerido)</label><br/>
-            <input  type="email" name="mail" id="mail" style="height:25px;width:300px" placeholder="Mail" required /><br/>
-            <br/>
-            <label for="cel">Celular (requerido)</label><br/>
-            <input type="tel" name="cel" id="cel" style="height:25px;width:300px" pattern="[0-9]{10}" placeholder="Celular" required /> <small>Completar con Código de Area + Número Local (largo total = 10). Ejemplo: 1144445555</small><br/>
-            <br/>
-            <label for="mensaje">Mensaje (requerido)</label><br/>
-            <!--<input type="text" name="mensaje" id="mensaje" style="height:150px;width:300px" placeholder="Mensaje"><br/>-->
-            <textarea name="mensaje" id="mensaje" style="height:150px;width:300px" placeholder="Mensaje" required></textarea><br/>
-            <br/>
-            <input type="submit" name="botonEnviar" value="Enviar">
-            <input type="reset" name="botonReset" value="Borrar">
-        </form>
+        <section>
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item  px-5">
+                            <a class="nav-link text-dark" href="./index.html">Inicio</a>
+                                </li>
+                        <li class="nav-item px-5">
+                            <a class="nav-link text-dark" href="./complejos.html">Complejos</a>
+                        </li>
+                        <li class="nav-item px-5">
+                            <a class="nav-link text-dark" href="./contacto.html">Contacto</a>
+                        </li>    
+                    </ul>
+                </div>  
+            </nav>    
+        </section>
+    </header>    
 
-    </section>
+    <main>
 
-    <script src="app.js"></script>
+        <section >
+            
+            <h2>Por favor completá el formulario con tu consulta o comentarios:</h2>
+            
+            <form id="form" action="https://formspree.io/f/xoqoyazy" method="POST" >
 
-</main>
+                <label for="nombre" class="formLabel" >Nombre (requerido)</label><br/>
+                <input type="text" name="nombre" id="nombre" class="formInput" placeholder="Nombre y apellido"  /><br/>
+                <br/>
+                <label for="mail" class="formLabel">Correo Electrónico (requerido)</label><br/>
+                <input  type="email" name="mail" id="mail" class="formInput" placeholder="Mail"  /><br/>
+                <br/>
+                <label for="cel" class="formLabel">Celular (requerido)</label><br/>
+                <input type="tel" name="cel" id="cel" class="formInput" pattern="[0-9]{10}" placeholder="Celular"  /> <small>Completar con Código de Area + Número Local (largo total = 10). Ejemplo: 1144445555</small><br/>
+                <br/>
+                <label for="mensaje" class="formLabel">Mensaje (requerido)</label><br/>
+                <textarea name="mensaje" id="mensaje" class="formInput" style="height:150px;width:300px" placeholder="Mensaje" ></textarea><br/>
+                <br/>
+                <input type="submit" class="formBoton" name="botonEnviar" value="Enviar">
+                <input type="reset" class="formBoton" name="botonReset" value="Borrar">
+            </form>
 
-<footer>
-    <hr>
-        <p>Tel:4444 4444  | <a href="mailto:mail.google.com">Mail</a></p>
-    <hr>
-</footer>
+        </section>
 
-    
-</body>
+        <script src="app.js"></script>
+    </main>
+
+    <footer>
+        <hr>
+            <p>Tel: 4731 5053 | <a href="mailto:mail.google.com">cinecodo@cine.com.ar</a></p>        
+
+            <div class="redes">
+                <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://ar.linkedin.com/?original_referer=https%3A%2F%2Far.search.yahoo.com%2F" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+        <hr>
+    </footer>
+
 </html>
