@@ -18,15 +18,28 @@ h3, p, div > div, table {
     color: white;
 }
 
-
-.Poster {                  
-    border: 10px solid white;
-    position: relative;
-    left: 53%;
-    bottom: 610px;
-    transform: scale(50%, 50%);
+section {
+    float:left;
+    width:70%;
 }
 
+aside{
+    float:right;
+    width:30%;
+}
+
+.trailer{
+    position: static;
+    right: 100px;   
+}
+
+.Poster{                  
+    border: 10px solid white;
+    transform: scale(45%, 45%);
+    position: relative;
+    right:100px;
+    bottom: 60px;
+}
 
 article{
     display: flex;
@@ -34,7 +47,6 @@ article{
     flex-wrap: wrap;
     justify-content: flex-start;
 }
-
 
 .fotoactores{
     border: 5px solid white;
@@ -45,4 +57,4 @@ article{
     font-size: 0.9em;
     color: white;
     text-align: center;
-}   /*Cómo lograr que quede el texto en el centro de la caja?*/
+}   
