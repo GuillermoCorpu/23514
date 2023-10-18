@@ -18,7 +18,8 @@ h3, p, div > div, table {
     color: white;
 }
 
-section {
+
+section{  
     float:left;
     width:70%;
 }
@@ -38,10 +39,9 @@ aside{
     transform: scale(45%, 45%);
     position: relative;
     right:100px;
-    bottom: 60px;
 }
 
-article{
+.actores{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -58,3 +58,5 @@ article{
     color: white;
     text-align: center;
 }   
+
+
