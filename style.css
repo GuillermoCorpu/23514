@@ -1,15 +1,22 @@
-*{
-    
+*{  
     border: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    position: fixed;/*fijar header*/
+    left: 0;
+    top: 0;
+    right: 0;
 }
 
 .encabezado{
     background-color: black;
     height: 90px;/*alto*/
     width: 100%;/*ancho*/
-    padding-right: 30px;/*margen interior derecho*/
+    padding-right: 80px;/*margen interior derecho*/
     display: flex;/**/
     flex-flow: row wrap;
     justify-content: space-between;/*modifica la distrubucion de los items*/
@@ -17,24 +24,23 @@
     /*text-align: center;*/
 }
 
-.redes{
-    
+.redes{   
     height: 90px;
-    width: 190px;
+    /*width: 190px;*/
     padding-top: 30px;
     display: flex;/**/
     /*flex-direction:row;/*flex direction es para ordenar. row las ordena en filas y columns en columnas*/
     flex-flow: row wrap;
     justify-content: space-between;
-
-    
+   
 }
 
 .menu{
     background-color: yellow;
     height: 50px;
+    width: 100%;
     border: 1mp 1mp white solid;
-    
+      
 }
 
 .menu ul{
@@ -49,15 +55,23 @@
     float: left;/*los items no se pongan en bloque*/
     font-weight: 700;/*resaltado*/
     text-align: center;/*alinieado*/
+    
 }
 
 .menu a{
     text-decoration: none;/*sacar el subrayado*/
     color: black;
+    padding: 0.6em 2em;/*sombredo para*/
+}
+
+.menu ul li a:hover{
+    background-color: rgb(236, 214, 16);
+
 }
 
 body{
     background-color: black;
+    padding-top: 150px;
 }
 
 .container{    
@@ -83,7 +97,9 @@ h2{
 }
 
 .caja-img:hover{
-    border-bottom: 20px orange outset;
+    border-bottom: 20px rgb(252, 252, 3) outset;
+    transition: all 0.2s ;
+    border-radius: 10px;
 }
 
 .titulo{
@@ -101,15 +117,6 @@ span:hover{
     color: white;
 
 }
-
-/*.cajas{
-    
-    width: 200px; 
-    height: 330px;
-    color: blanchedalmond;
-    margin: 20px;
-    border-bottom: 20px rgb(238, 74, 9) outset;
-}*/
 
 .estrenos{
     width: 100%;
@@ -139,9 +146,14 @@ span:hover{
     
 }
 
+p{
+    color: white;
+}
+
 i{
     color: white;
     font-size: 30px;
+    letter-spacing: 25px;
 }
 
 i:hover{
