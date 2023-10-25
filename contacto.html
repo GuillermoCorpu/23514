@@ -3,95 +3,105 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="initial-scale=1,width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="./Imagenes/th1.ico" type="image/x-icon">
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="./styleComplejos.css">
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">         <!--Estos tres links son del Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
         <script src="https://kit.fontawesome.com/c5b95681ac.js" crossorigin="anonymous"></script>  
+        
         <title>CineCodo</title>
     </head>
  
-    <header>
-        <section class="encabezado">
-            <a href="./index.html">
-                <img src=".\Imagenes\Logo Mediano.png" alt="Logo del cine" height="80px">
-            </a>
-            <div class="redes">
-                <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://ar.linkedin.com/?original_referer=https%3A%2F%2Far.search.yahoo.com%2F" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </section>
+    <body>
+        
+        <header>
+            <section class="encabezado">
+                <a href="./index.html">
+                    <img src=".\Imagenes\Logo Mediano.png" alt="Logo del cine" height="80px">
+                </a>
+                <div class="redes">
+                    <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://ar.linkedin.com/?original_referer=https%3A%2F%2Far.search.yahoo.com%2F" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </section>
 
-        <section>
-            <nav class="navbar navbar-expand-sm navbar-light">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item  px-5">
-                            <a class="nav-link text-dark" href="./index.html">Inicio</a>
-                                </li>
-                        <li class="nav-item px-5">
-                            <a class="nav-link text-dark" href="./complejos.html">Complejos</a>
-                        </li>
-                        <li class="nav-item px-5">
-                            <a class="nav-link text-dark" href="./contacto.html">Contacto</a>
-                        </li>    
-                    </ul>
-                </div>  
-            </nav>    
-        </section>
-    </header>    
+            <section>
+                <nav class="navbar navbar-expand-sm navbar-light">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item  px-5">
+                                <a class="nav-link text-dark" href="./index.html">Inicio</a>
+                                    </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link text-dark" href="./complejos.html">Complejos</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link text-dark" href="./contacto.html">Contacto</a>
+                            </li>    
+                        </ul>
+                    </div>  
+                </nav>    
+            </section>
+        </header>    
 
-    <main>
+        <main>
 
-        <section >
-            
-            <h2>Por favor completá el formulario con tu consulta o comentarios:</h2>
-            
-            <form id="form" action="https://formspree.io/f/xoqoyazy" method="POST" >
+            <section >
+                
+                <h2>Por favor completá el formulario con tu consulta o comentarios:</h2>
+                
+                <form id="form" action="https://formspree.io/f/xoqoyazy" method="POST" >
 
-                <label for="nombre" class="formLabel" >Nombre (requerido)</label><br/>
-                <input type="text" name="nombre" id="nombre" class="formInput" placeholder="Nombre y apellido"  /><br/>
-                <br/>
-                <label for="mail" class="formLabel">Correo Electrónico (requerido)</label><br/>
-                <input  type="email" name="mail" id="mail" class="formInput" placeholder="Mail"  /><br/>
-                <br/>
-                <label for="cel" class="formLabel">Celular (requerido)</label><br/>
-                <input type="tel" name="cel" id="cel" class="formInput" pattern="[0-9]{10}" placeholder="Celular"  /> <small>Completar con Código de Area + Número Local (largo total = 10). Ejemplo: 1144445555</small><br/>
-                <br/>
-                <label for="mensaje" class="formLabel">Mensaje (requerido)</label><br/>
-                <textarea name="mensaje" id="mensaje" class="formInput" style="height:150px;width:300px" placeholder="Mensaje" ></textarea><br/>
-                <br/>
-                <input type="submit" class="formBoton" name="botonEnviar" value="Enviar">
-                <input type="reset" class="formBoton" name="botonReset" value="Borrar">
-            </form>
+                    <label for="nombre" class="formLabel" >Nombre (requerido)</label><br/>
+                    <input type="text" name="nombre" id="nombre" class="formInput" placeholder="Nombre y apellido"  /><br/>
+                    <br/>
+                    <label for="mail" class="formLabel">Correo Electrónico (requerido)</label><br/>
+                    <input  type="email" name="mail" id="mail" class="formInput" placeholder="Mail"  /><br/>
+                    <br/>
+                    <label for="cel" class="formLabel">Celular (requerido)</label><br/>
+                    <input type="tel" name="cel" id="cel" class="formInput" pattern="[0-9]{10}" placeholder="Celular"  /> <small>Completar con Código de Area + Número Local (largo total = 10). Ejemplo: 1144445555</small><br/>
+                    <br/>
+                    <label for="mensaje" class="formLabel">Mensaje (requerido)</label><br/>
+                    <textarea name="mensaje" id="mensaje" class="formInput" style="height:150px;width:300px" placeholder="Mensaje" ></textarea><br/>
+                    <br/>
+                    <input type="submit" class="formBoton" name="botonEnviar" value="Enviar">
+                    <input type="reset" class="formBoton" name="botonReset" value="Borrar">
+                </form>
 
-        </section>
+            </section>
 
-        <script src="app.js"></script>
-    </main>
+            <script src="app.js"></script>
+        </main>
 
-    <footer>
-        <hr>
-            <p>Tel: 4731 5053 | <a href="mailto:mail.google.com">cinecodo@cine.com.ar</a></p>        
+        <footer>
+            <hr>
+                <p>Tel: 4731 5053 | <a href="mailto:cinecodo@cine.com.ar">cinecodo@cine.com.ar</a></p>        
 
-            <div class="redes">
-                <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://ar.linkedin.com/?original_referer=https%3A%2F%2Far.search.yahoo.com%2F" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
+                <div class="redes">
+                    <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://ar.linkedin.com/?original_referer=https%3A%2F%2Far.search.yahoo.com%2F" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
 
-        <hr>
-    </footer>
+            <hr>
+        </footer>
+    </body>
 
 </html>

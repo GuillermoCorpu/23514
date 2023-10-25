@@ -1,138 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
 
-    <link rel="stylesheet" href="style.css"> <!--VER BIEN QUE NO SE SOBREPONGA NADA-->
-    <link rel="stylesheet" href="stylepasaraloriginal.css"> <!--PONER EL LINK DEL CSS QUE VA, PASAR LOS DATOS!-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./Imagenes/th1.ico" type="image/x-icon">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">         <!--Estos tres links son del Google Fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <title>CineCodo</title>
-</head>
+        <link rel="stylesheet" href="style.css">
 
-<body>
+        <link rel="preconnect" href="https://fonts.googleapis.com">         <!--Estos tres links son del Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-<!--Faltan las etiquetas Header, Nav, Footer-->
+        <script src="https://kit.fontawesome.com/c5b95681ac.js" crossorigin="anonymous"></script>  
 
-    <main>
-        <section class="contenedor1"> 
-        <h2>EXTRAÑA FORMA DE VIDA</h2>
-        <h3 class="sala">SALA 1</h3>
-            <!--Link al video de youtube-->
-        <iframe class="trailer" width="1253" height="705" src="https://www.youtube.com/embed/BpXXN847pZ8" title="Trailer oficial de Extraña forma de vida, un cortometraje dirigido por Pedro Almodóvar." 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen>
-        </iframe>
+        <title>CineCodo</title>
+    </head>
+
+    <body>
         
-            <br>
-            <br>
-
-        <h3 class="sinopsis">SINOPSIS</h3>
-          <p>Tras veinticinco años, Silva cruza el desierto a caballo para visitar a su amigo, el sheriff Jake. Celebran el encuentro, pero a la mañana siguiente Jake le dice que el motivo de 
-            su viaje no es rememorar su amistad.</p>
-        </section>
-
-        <section class="contenedor2">
-        <article class="fichatecnica">
-            <h3 class="ficha">FICHA TÉCNICA</h3>
-                <table>
-                    <tr>
-                        <td>Título original:</td>
-                        <td>Extraña forma de vida</td>
-                    </tr>
-                    <tr>
-                        <td>Año:</td>
-                        <td>2023</td>
-                    </tr>
-                    <tr>
-                        <td>Duración:</td>
-                        <td>31 min.</td>
-                    </tr>
-                    <tr>
-                        <td>Género:</td>
-                        <td>Western, Melodrama</td>
-                    </tr>
-                    <tr>
-                        <td>País:</td>
-                        <td>España</td>
-                    </tr>
-                    <tr>
-                        <td>Dirección:</td>
-                        <td>Pedro Almodóvar</td>
-                    </tr>
-                    <tr>
-                        <td>Guión:</td>
-                        <td>Pedro Almodóvar</td>
-                    </tr>
-                </table>
-        </article>
-        <br>
-        <h3 class="reparto">REPARTO</h3> 
-        <article class="actores">
-
-            <div class="fotoactores">
-                <img src="Imágenes Reparto/Ethan Hawke Ok.png" alt="Actor Ethan Hawke">
-                <div>
-                    <p class="textor">Ethan Hawke<p>
+        <header>
+            <section class="encabezado">
+                <a href="./index.html">
+                    <img src=".\Imagenes\Logo Mediano.png" alt="Logo del cine" height="80px">
+                </a>
+                <div class="redes">
+                    <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://ar.linkedin.com/?original_referer=https%3A%2F%2Far.search.yahoo.com%2F" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-            </div>
+            </section>
 
-            <div class="fotoactores">
-                <img src="Imágenes Reparto/Pedro Pascal Ok.png" alt="Actor Pedro Pascal">
-                <div>
-                    <p class="textor">Pedro Pascal<p>
+            <section>
+                <nav class="navbar navbar-expand-sm navbar-light">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item  px-5">
+                                <a class="nav-link text-dark" href="./index.html">Inicio</a>
+                                    </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link text-dark" href="./complejos.html">Complejos</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link text-dark" href="./contacto.html">Contacto</a>
+                            </li>    
+                        </ul>
+                    </div>  
+                </nav>    
+            </section>
+        </header>    
+
+        <main>
+            <section class="contenedor1"> 
+                <h2 class="titulo">EXTRAÑA FORMA DE VIDA</h2>
+                <h3 class="sala">SALA 1</h3>
+                <div class="trailer">    <!--Link al video de youtube-->
+                    <iframe width="100%" height="705" src="https://www.youtube.com/embed/BpXXN847pZ8">
+                    </iframe>
                 </div>
-            </div>
 
-            <div class="fotoactores">
-                <img src="Imágenes Reparto/José Condessa Ok.png" alt="Actor José Condessa">
-                <div>
-                    <p class="textor">José Condessa<p>
-                </div>
-            </div>
+                <br>
+                <br>
 
-            <div class="fotoactores">
-                <img src="Imágenes Reparto/Manu Ríos Ok.png" alt="Actor Manu Ríos">
-                <div>
-                    <p class="textor">Manu Ríos<p>
-                </div>
-            </div>
+                <h3 class="sinopsis">SINOPSIS</h3>
+                <p>Tras veinticinco años, Silva cruza el desierto a caballo para visitar a su amigo, el sheriff Jake. Celebran el encuentro, pero a la mañana siguiente Jake le dice que el motivo de 
+                    su viaje no es rememorar su amistad.</p>
+            </section>
 
-            <div class="fotoactores">
-                <img src="Imágenes Reparto/Sara Sálamo ok.png" alt="Actor Sara Sálamo">
-                <div>
-                    <p class="textor">Sara Sálamo<p>
-                </div>
-            </div>
+            <section class="contenedor2">
+                <article class="fichatecnica">
+                    <h3 class="ficha">FICHA TÉCNICA</h3>
+                    <table>
+                        <tr>
+                            <td>Título original:</td>
+                            <td>Extraña forma de vida</td>
+                        </tr>
+                        <tr>
+                            <td>Año:</td>
+                            <td>2023</td>
+                        </tr>
+                        <tr>
+                            <td>Duración:</td>
+                            <td>31 min.</td>
+                        </tr>
+                        <tr>
+                            <td>Género:</td>
+                            <td>Western, Melodrama</td>
+                        </tr>
+                        <tr>
+                            <td>País:</td>
+                            <td>España</td>
+                        </tr>
+                        <tr>
+                            <td>Dirección:</td>
+                            <td>Pedro Almodóvar</td>
+                        </tr>
+                        <tr>
+                            <td>Guión:</td>
+                            <td>Pedro Almodóvar</td>
+                        </tr>
+                    </table>
+                </article>
 
-            <div class="fotoactores">
-                <img src="Imágenes Reparto/Erenice Lohan Ok.png" alt="Actor Erenice Lohan">
-                <div>
-                    <p class="textor">Erenice Lohan<p>
-                </div>
-            </div>
+                <h3 class="reparto">REPARTO</h3> 
+                <article class="actores">
 
-            <div class="fotoactores">
-                <img src="/Imágenes Reparto/George Steane Ok.png" alt="Actor George Steane">
-                <div>
-                    <p class="textor">George Steane<p>
-                </div>
-            </div>
-        </article>
-    </section> 
+                    <div class="fotoactores">
+                        <img src="Imágenes Reparto/Ethan Hawke Ok.png" alt="Actor Ethan Hawke">
+                        <div>
+                            <p class="textor">Ethan Hawke<p>
+                        </div>
+                    </div>
 
-        <aside>
-            <img class="Poster" src="Imagenes/Extraña forma de vida Grande.png" alt="Poster de Extraña forma de vida" width="" height="">
-        </aside>
-    
-       
- </main>
-    
+                    <div class="fotoactores">
+                        <img src="Imágenes Reparto/Pedro Pascal Ok.png" alt="Actor Pedro Pascal">
+                        <div>
+                            <p class="textor">Pedro Pascal<p>
+                        </div>
+                    </div>
 
+                    <div class="fotoactores">
+                        <img src="Imágenes Reparto/José Condessa Ok.png" alt="Actor José Condessa">
+                        <div>
+                            <p class="textor">José Condessa<p>
+                        </div>
+                    </div>
 
-</body>
+                    <div class="fotoactores">
+                        <img src="Imágenes Reparto/Manu Ríos Ok.png" alt="Actor Manu Ríos">
+                        <div>
+                            <p class="textor">Manu Ríos<p>
+                        </div>
+                    </div>
+
+                    <div class="fotoactores">
+                        <img src="Imágenes Reparto/Sara Sálamo ok.png" alt="Actor Sara Sálamo">
+                        <div>
+                            <p class="textor">Sara Sálamo<p>
+                        </div>
+                    </div>
+
+                    <div class="fotoactores">
+                        <img src="Imágenes Reparto/Erenice Lohan Ok.png" alt="Actor Erenice Lohan">
+                        <div>
+                            <p class="textor">Erenice Lohan<p>
+                        </div>
+                    </div>
+
+                    <div class="fotoactores">
+                        <img src="Imágenes Reparto/George Steane Ok.png" alt="Actor George Steane">
+                        <div>
+                            <p class="textor">George Steane<p>
+                        </div>
+                    </div>
+                </article>
+        
+                <aside>
+                    <img class="Poster" src="Imagenes/Extraña forma de vida Grande.png" alt="Poster de Extraña forma de vida" >
+                </aside>
+                
+            </section> 
+
+        </main>
+            
+        <footer>
+            <hr>
+                <p>Tel: 4731 5053  | <a href="mailto:cinecodo@cine.com.ar">cinecodo@cine.com.ar</a></p>
+            
+
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://ar.linkedin.com/?original_referer=https%3A%2F%2Far.search.yahoo.com%2F" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <hr>
+        </footer>
+        
+    </body>
 </html>
